@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+<style type="text/css">
+
+</style></head>
+<body>
+    <header>
+        <div id="head">
+            <h1>PORTFOLIO</h1>
+            <h4 id="navi">
+            <a href="https://karanchandel.github.io/about-me/" target="_blank" class="nav">ABOUT ME</a>
+            <a href="https://karanchandel.github.io/hobbies/ " target="_blank" class="nav">HOBBIES & INTEREST</a>
+            <a href="" target="_blank" class="nav">EDUCATION</a>
+       
+            <span class="facebook"><img src="./fb.jpg" width="30px" height="30px"></span>
+        </h4>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="logo">
+            <img src="./karanimg.jpeg" width="350px" height="350px" id="karan" >
+        </div>
+        <div id="para">
+        <h2>my name is karan</h2>
+          
+        <P style="color: rgb(255, 115, 0);" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo corrupti. Quis quod nesciunt illum necessitatibus ipsum sed hic itaque fuga dolor distinctio? Incidunt esse nulla odio amet aliquam ratione.</P>
+    
+    </div>
+    </main>
+
+    <footer >
+        <div id="last">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit deleniti sint neque magni est dignissimos expedita ex corrupti quaerat? Debitis voluptas quo iusto amet aliquid rerum exercitationem nihil hic odio.
+            </p>
+        </div>
+    </footer>
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html> 
